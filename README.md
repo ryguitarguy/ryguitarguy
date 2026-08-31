@@ -22,14 +22,16 @@
 
 ---
 
-### 🚀 Cybersecurity Portfolio Roadmap
+### 📊 Cybersecurity Portfolio Roadmap
 
-Below are the hands-on projects I am actively building, testing, and documenting on GitHub:
-
-- [x] **Phase 0: OSI Model & Encapsulation Guide 🌐** *Focus:* Layer 1–7 PDU encapsulation lifecycle (`Data` ➡️ `Segment` ➡️ `Packet` ➡️ `Frame` ➡️ `Bits`), attack vector mapping (SYN floods, ARP spoofing), and defensive controls.
-- [x] **Project 1: Local Network Security Audit 🔍** *Focus:* Audited local network targets (`hephaestus.lan`) using Nmap. Identified cleartext protocols (Port 23 Telnet) and insecure HTTP methods, creating an executive remediation write-up and key-based SSH hardening plan.
-- [ ] **Project 2: Threat Intelligence API Integrator 🤖 (Current Focus)** *Focus:* Building a Layer 7 Python CLI tool utilizing `requests` to query threat intelligence endpoints (AbuseIPDB / VirusTotal), parse JSON payloads, and manage API authentication securely via `.env` controls.
-- [ ] **Project 3: Endpoint Logging & Incident Analysis 📊 (Upcoming)** *Focus:* Configuring Sysmon and Event Logging inside a virtual machine to capture endpoint telemetry during simulated attack payloads (BadUSB / PowerShell) and publishing SOC analysis reports.
+- [x] **Phase 0: OSI Model & Encapsulation Guide 🌐**
+  * **Focus**: Deep dive into the 7-layer OSI model, PDU encapsulation lifecycle, and mapping attack vectors to defensive controls.
+- [x] **Project 1: Local Network Security Audit 🔍**
+  * **Focus**: Conducted discovery and service audits across `hephaestus.lan`[cite: 1, 2]. Identified cleartext Telnet and HTTP risks with SSH key-based remediation[cite: 1, 2].
+- [x] **Project 2: Threat Intelligence API Integrator 🤖**
+  * **Focus**: Application Layer (L7) Python automation using AbuseIPDB API. Validated IP inputs, parsed threat JSON telemetry, and secured API keys with `.env` controls.
+- [ ] **Project 3: Endpoint Logging & Incident Analysis 📊** *(Up Next)*
+  * **Focus**: VM telemetry capture with Sysmon and Windows Event Logs, executing simulated suspicious payloads, and publishing SOC incident response reports.
 
 ---
 
