@@ -27,11 +27,17 @@
 - [x] **Phase 0: OSI Model & Encapsulation Guide 🌐**
   * **Focus**: Deep dive into the 7-layer OSI model, PDU encapsulation lifecycle, and mapping attack vectors to defensive controls.
 - [x] **Project 1: Local Network Security Audit 🔍**
-  * **Focus**: Conducted discovery and service audits across `hephaestus.lan`[cite: 1, 2]. Identified cleartext Telnet and HTTP risks with SSH key-based remediation[cite: 1, 2].
+  * **Focus**: Conducted discovery and service audits across `hephaestus.lan`. Identified cleartext Telnet and HTTP risks with SSH key-based remediation.
 - [x] **Project 2: Threat Intelligence API Integrator 🤖**
   * **Focus**: Application Layer (L7) Python automation using AbuseIPDB API. Validated IP inputs, parsed threat JSON telemetry, and secured API keys with `.env` controls.
-- [ ] **Project 3: Endpoint Logging & Incident Analysis 📊** *(Up Next)*
-  * **Focus**: VM telemetry capture with Sysmon and Windows Event Logs, executing simulated suspicious payloads, and publishing SOC incident response reports.
+- [x] **Project 3: Sysmon Endpoint Telemetry & Process Creation Analysis 📊**
+  * **Focus**: Configured Windows 11 VM telemetry using Sysmon and SwiftOnSecurity XML baselines. Simulated obfuscated PowerShell process creation, captured Event ID 1 logs, and documented SOC findings.
+- [ ] **Project 4: Network Telemetry & Traffic Analysis (Sysmon & Wireshark) 🌐** *(Up Next)*
+  * **Focus**: Detect command-and-control (C2) communication patterns, correlate Sysmon Event ID 3 with `.pcapng` packet captures, and map traffic to MITRE ATT&CK T1071.
+- [ ] **Project 5: Open-Source SIEM Integration (Wazuh / Elastic Stack) 🛡️**
+  * **Focus**: Centralized log collection, custom YARA/XML detection rule creation, and SOC dashboard design for process and network anomalies.
+- [ ] **Project 6: Threat Hunting & Persistence Mechanism Detection 🏹**
+  * **Focus**: Detect registry run keys and scheduled task persistence using Sysmon Event ID 11/12/13 and establish hunting hypotheses.
 
 ---
 
