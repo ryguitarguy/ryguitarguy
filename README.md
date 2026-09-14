@@ -18,23 +18,23 @@
 * **Mobile Cyberdeck**: Custom Raspberry Pi 5 setup in an Apache case with internal battery power & live telemetry monitoring.
 * **Wireless Audit Gear**: Flipper Zero running Unleashed firmware, paired with a Wi-Fi Marauder board & high-gain Sub-GHz antennas.
 * **Virtual Workstation**: Oculus VR multi-monitor setup bridging Linux terminal environments, Python development, and live network monitoring.
-* **Lab Network**: Private Tailscale encrypted mesh network (`100.64.0.0/10`) connecting dedicated lab endpoints (`Talos`, `Hephaestus`).
+* **Lab Network**: Private encrypted mesh network & LAN connecting dedicated lab endpoints (`Talos`, `Hephaestus`).
 
 ---
 
 ### 📊 Cybersecurity Portfolio Roadmap
 
-- [x] **Phase 0: OSI Model & Encapsulation Guide 🌐**
+- [x] **Phase 0: [OSI Model & Encapsulation Guide](https://github.com/ryguitarguy/OSI-Network-Security-Guide) 🌐**
   * **Focus**: Deep dive into the 7-layer OSI model, PDU encapsulation lifecycle, and mapping attack vectors to defensive controls.
-- [x] **Project 1: Local Network Security Audit 🔍**
+- [x] **Project 1: [Local Network Security Audit](https://github.com/ryguitarguy/Network-Security-Audit-Project1) 🔍**
   * **Focus**: Conducted discovery and service audits across `hephaestus.lan`. Identified cleartext Telnet and HTTP risks with SSH key-based remediation.
-- [x] **Project 2: Threat Intelligence API Integrator 🤖**
+- [x] **Project 2: [Threat Intelligence API Integrator](https://github.com/ryguitarguy/threat-intel-integrator) 🤖**
   * **Focus**: Application Layer (L7) Python automation using AbuseIPDB API. Validated IP inputs, parsed threat JSON telemetry, and secured API keys with `.env` controls.
 - [x] **Project 3: Sysmon Endpoint Telemetry & Process Creation Analysis 📊**
   * **Focus**: Configured Windows 11 VM telemetry using Sysmon and SwiftOnSecurity XML baselines. Simulated obfuscated PowerShell process creation, captured Event ID 1 logs, and documented SOC findings.
-- [ ] **Project 4: Network Telemetry & Traffic Analysis (Sysmon & Wireshark) 🌐** *(Up Next)*
-  * **Focus**: Detect command-and-control (C2) communication patterns, correlate Sysmon Event ID 3 with `.pcapng` packet captures, and map traffic to MITRE ATT&CK T1071.
-- [ ] **Project 5: Open-Source SIEM Integration (Wazuh / Elastic Stack) 🛡️**
+- [x] **Project 4: [Network Telemetry & Traffic Analysis](https://github.com/ryguitarguy/Network-Telemetry-Traffic-Analysis) 🌐**
+  * **Focus**: Cross-layer correlation pairing host-level Sysmon Event ID 3 socket telemetry with raw `tcpdump` packet captures (`.pcapng`) on the Talos sensor, mapped to MITRE ATT&CK T1071.
+- [ ] **Project 5: Open-Source SIEM Integration (Wazuh / Elastic Stack) 🛡️** *(Up Next)*
   * **Focus**: Centralized log collection, custom YARA/XML detection rule creation, and SOC dashboard design for process and network anomalies.
 - [ ] **Project 6: Threat Hunting & Persistence Mechanism Detection 🏹**
   * **Focus**: Detect registry run keys and scheduled task persistence using Sysmon Event ID 11/12/13 and establish hunting hypotheses.
@@ -45,11 +45,12 @@
 
 | Domain | Technologies & Tools |
 | :--- | :--- |
-| **Languages & Scripting** | Python 3, Bash, SQL, DuckyScript |
-| **Operating Systems** | Linux (Debian, Raspberry Pi OS), Windows Server / Client VMs |
-| **Networking & Auditing** | Nmap, Wireshark, Tailscale Mesh, Subnetting, OSI Layer Analysis |
-| **Hardware & Security Tools** | Raspberry Pi 5, Flipper Zero (Unleashed, Wi-Fi Marauder, Sub-GHz), WiGLE |
-| **Core Concepts** | OSI Defensive Layering, REST APIs, System Hardening, Threat Intelligence, SOC Telemetry Analysis |
+| **Languages & Scripting** | Python 3, Bash, PowerShell, SQL, DuckyScript |
+| **Operating Systems** | Linux (Debian, Raspberry Pi OS), Windows 11 / Server VMs |
+| **Networking & Auditing** | `tcpdump`, Wireshark, Nmap, Subnetting, OSI Layer Correlation |
+| **Hardware & Security Tools** | Raspberry Pi 5 (Talos Cyberdeck), Flipper Zero (Unleashed, Wi-Fi Marauder, Sub-GHz), WiGLE |
+| **Detection & Logging** | Microsoft Sysmon (Event ID 1 & 3), Event Viewer XML Filtering, MITRE ATT&CK Mapping |
+| **Core Concepts** | Cross-Layer Telemetry Correlation, REST APIs, System Hardening, Threat Intelligence, SOC Operations |
 
 ---
 
