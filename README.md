@@ -34,9 +34,11 @@
   * **Focus**: Configured Windows 11 VM telemetry using Sysmon and SwiftOnSecurity XML baselines. Simulated obfuscated PowerShell process creation, captured Event ID 1 logs, and documented SOC findings.
 - [x] **Project 4: [Network Telemetry & Traffic Analysis](https://github.com/ryguitarguy/Network-Telemetry-Traffic-Analysis) 🌐**
   * **Focus**: Cross-layer correlation pairing host-level Sysmon Event ID 3 socket telemetry with raw `tcpdump` packet captures (`.pcapng`) on the Talos sensor, mapped to MITRE ATT&CK T1071.
-- [ ] **Project 5: Open-Source SIEM Integration (Wazuh / Elastic Stack) 🛡️** *(Up Next)*
+- [x] **Project 5: [PacketLens](https://github.com/ryguitarguy/PacketLens) 🔎**
+  * **Focus**: Custom TypeScript utility developed for parsing and inspecting PCAP data to streamline network packet analysis.
+- [ ] **Project 6: Open-Source SIEM Integration (Wazuh / Elastic Stack) 🛡️** *(Up Next)*
   * **Focus**: Centralized log collection, custom YARA/XML detection rule creation, and SOC dashboard design for process and network anomalies.
-- [ ] **Project 6: Threat Hunting & Persistence Mechanism Detection 🏹**
+- [ ] **Project 7: Threat Hunting & Persistence Mechanism Detection 🏹**
   * **Focus**: Detect registry run keys and scheduled task persistence using Sysmon Event ID 11/12/13 and establish hunting hypotheses.
 
 ---
@@ -45,9 +47,9 @@
 
 | Domain | Technologies & Tools |
 | :--- | :--- |
-| **Languages & Scripting** | Python 3, Bash, PowerShell, SQL, DuckyScript |
+| **Languages & Scripting** | Python 3, Bash, PowerShell, SQL, DuckyScript, TypeScript |
 | **Operating Systems** | Linux (Debian, Raspberry Pi OS), Windows 11 / Server VMs |
-| **Networking & Auditing** | `tcpdump`, Wireshark, Nmap, Subnetting, OSI Layer Correlation |
+| **Networking & Auditing** | `tcpdump`, Wireshark, Nmap, PacketLens (Custom PCAP Tool), Subnetting, OSI Layer Correlation |
 | **Hardware & Security Tools** | Raspberry Pi 5 (Talos Cyberdeck), Flipper Zero (Unleashed, Wi-Fi Marauder, Sub-GHz), WiGLE |
 | **Detection & Logging** | Microsoft Sysmon (Event ID 1 & 3), Event Viewer XML Filtering, MITRE ATT&CK Mapping |
 | **Core Concepts** | Cross-Layer Telemetry Correlation, REST APIs, System Hardening, Threat Intelligence, SOC Operations |
